@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- container -->
+    <div class="container">
+        <!-- header -->
+        <header>
+            <h1>Chào mừng bạn đến với lớp học <mark>WEB</mark></h1>
+            <h2>Khóa học <span class="hightlight">HTML, CSS, JavaScript</span>dành cho người mới bắt đầu</h2>
+            <h2>Khóa học được dạy offline vào <em>T2</em> hàng tuần</h2>
+            <h3><strong>Thank you</strong></h3>
+        </header>
+        <!-- thanh menu nav -->
+        <nav class="menu">
+            <ul>
+                <li><a href="#gioiThieu">Giới thiệu</a></li>
+                <li><a href="#kienThuc">Kiến thức</a></li>
+                <li><a href="#lichHoc">Lịch học</a></li>
+                <li><a href="#dangKy">Đăng ký</a></li>
+            </ul> 
+        </nav>
+        <!-- body gồm các article, section, aside -->
+        <main class="main-body">
+
+            <article id="gioiThieu">
+                <th>Giới thiệu khóa học</th>
+                <ol>
+                    <li>Khóa học web dành cho người mới bắt đầu</li>
+                    <li>Học HTML để xây dựng cấu trúc trang web</li>
+                    <li>Học CSS để trang trí giao diện</li>
+                    <li>Học JS để tạo tương tác</li>
+                </ol>
+                <figure>
+                <img src="anh-lop-hoc-7.jpg" alt="ảnh lớp học WEB">
+                <figcaption>
+                    Hình 1: Sinh viên thực hành lập trình web
+                </figcaption>
+            </figure>
+            </article>
+
+            <div class="main-content">
+            <!-- nội dung bên trái -->
+            <aside id="kienThuc">
+                <h2>Tại sao nên học web?</h2>
+                <ol>
+                    <li>Có thể tự xây dựng website</li>
+                    <li>Rèn luyện tư duy lập trình</li>
+                    <li>Có kiến thức nền tảng để học Front-end</li>
+                </ol>
+            </aside>
+            <!-- nội dung bên phải -->
+            <div class="content">
+                <section id="lichHoc">
+                <p>Ở đây chúng ta sẽ được học theo lộ trình sau: </p>
+            <table border="1" cellpadding="8">
+                <thead>
+                <tr>
+                    <th>Buổi</th>
+                    <th>Nội dung</th>
+                    <th>Thời lượng</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Buổi 01</td>
+                    <td>HTML cơ bản</td>
+                    <td>2 giờ</td>
+                </tr>             
+                <tr>
+                    <td>Buổi 02</td>
+                    <td>CSS cơ bản</td>
+                    <td>3 giờ</td>
+                </tr>
+                <tr>
+                    <td>Buổi 03</td>
+                    <td>JS cơ bản</td>
+                    <td>3 giờ</td>
+                </tr>
+                </tbody>
+
+                <tfoot>
+                <tr>
+                    <th colspan="2">Tổng thời lượng</th>
+                    <td>8 giờ</td>
+                </tr>
+                </tfoot>
+            </table>
+            </section>
+            <section id="dangKy">
+                <h3>Form để học viên đăng ký lớp <mark>below</mark></h3>
+                <form>
+                <fieldset>
+                    <legend>Thong tin ca nhan</legend>
+                    <table>
+                        <tr>
+                        <td><label for="hoten">Họ và tên: </label></td>
+                        <td><input type="text" id="hoten" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email: </label></td>
+                        <td><input type="email" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sodt">Số điện thoại: </label></td>
+                        <td><input type="text" id="sodt" required></td>
+                    </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Trình độ</legend>
+                    <select>
+                    <option>Mới bắt đầu</option>
+                    <option>Đã có nền tảng</option>
+                </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Ca học mong muốn (chọn 1)</legend>
+                    <label for="cahoc">Sáng</label>
+                    <input type="radio" id="cahoc" name="cahoc">
+                    <label for="cahoc">Chiều</label>
+                    <input type="radio" id="cahoc" name="cahoc">
+                    <label for="cahoc">Tối</label>
+                    <input type="radio" id="cahoc" name="cahoc">
+                </fieldset>
+                <center>
+                <button type="submit">ĐĂNG KÝ</button>
+                <button type="reset">RESET</button>
+                </center>
+                </form>
+            </section>      
+            </div>
+          </div>       
+     </main>
+            <footer>
+                <p>Tên lớp: WEB PRIVATE 2026</p>
+                <p>Email: webclass@gmail.com</p>
+                <p>Địa điểm: HAUI UNIVERSITY</p>
+            </footer>
+    </div>
+</body>
+</html>
